@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-select=no">
-<title>SKCT 모의 테스트 - 프로페셔널 패키지 v8.9 (PC/모바일 하이브리드 완벽 지원본)</title>
+<title>SKCT 모의 테스트 - 프로페셔널 패키지 v8.9.2 (약관 및 정책 최신화)</title>
 
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9646437782811255"
      crossorigin="anonymous"></script>
@@ -180,15 +180,12 @@ textarea#memo{flex:1;background:var(--surface);border:1px solid var(--border);bo
 .setup-omr-table td { padding: 8px 4px !important; }
 
 /* ==========================================================================
-   🚨 핵심: 모바일 전용 반응형 미디어쿼리 미세 튜닝 (PC 버전 건드리지 않음)
+   🚨 모바일 전용 반응형 미디어쿼리 미세 튜닝
    ========================================================================== */
 @media (max-width: 1024px) {
-  #mobile-nav-bar { display: flex; } /* 모바일 하단 탭바 가동 */
-  
-  /* 토글 버튼 숨김 및 슬라이딩 무력화 */
+  #mobile-nav-bar { display: flex; } 
   #omr-toggle-btn { display: none !important; }
   
-  /* 세 가지 핵심 파트를 절대 배치 후 탭 전환식으로 변경 */
   #pdf-section, #omr-panel, #sidebar {
     position: absolute !important;
     top: 0 !important; left: 0 !important;
@@ -200,24 +197,24 @@ textarea#memo{flex:1;background:var(--surface);border:1px solid var(--border);bo
     display: none;
   }
   
-  /* 활성화된 영역만 가동 */
   body[data-mview="pdf"] #pdf-section { display: flex !important; }
   body[data-mview="omr"] #omr-panel { display: flex !important; }
   body[data-mview="tool"] #sidebar { display: flex !important; width: 100% !important; }
   
-  /* 모바일 가독성을 위해 패딩 조정 */
   #pdf-section { padding: 8px; }
   #calc-wrap { padding: 8px; }
   .cbtn { height: 38px; font-size: 14px; }
 }
 </style>
 </head>
-<body data-mview="pdf"> <div id="app">
+<body data-mview="pdf">
+
+<div id="app">
   <div id="main-view">
     <div id="cover-screen">
       <div class="cover-badge" id="dynamic-cover-badge">비대졸 전형 적용 중</div>
       <h1 class="cover-title">SKCT 모의 테스트</h1>
-      <p class="cover-subtitle">시험장과 유사한 웹 CBT 환경 제공 및 전형별 합격 가이드라인 수록 (PC사용 권장)</p>
+      <p class="cover-subtitle">시험장과 유사한 웹 CBT 환경 제공 및 전형별 합격 가이드라인 수록 (PC 사용 권장)</p>
       
       <div class="selector-group">
         <div class="theme-selector">
@@ -265,7 +262,7 @@ textarea#memo{flex:1;background:var(--surface);border:1px solid var(--border);bo
       <div class="seo-section-wrapper" id="real-seo-section">
         <article class="seo-article">
           <h2>SKCT (SK종합적성검사) 전형별 완벽 대비 핵심 전략</h2>
-          <p>SK그룹 입사를 위한 필수 관문인 <strong>SKCT (SK Competency Test)</strong>는 직무 수행에 필요한 종합적 역량을 측정하는 심층 시험입니다. 본 가이드에서는 지원자의 학력 및 직군에 따른 전형별 세부 차이점และ 영역별 고득점 공략법을 체계적으로 분석합니다.</p>
+          <p>SK그룹 입사를 위한 필수 관문인 <strong>SKCT (SK Competency Test)</strong>는 직무 수행에 필요한 종합적 역량을 측정하는 심층 시험입니다. 본 가이드에서는 지원자의 학력 및 직군에 따른 전형별 세부 차이점과 영역별 고득점 공략법을 체계적으로 분석합니다.</p>
           
           <h2>1. 대졸 전형 vs 비대졸(전문학사/고졸) 전형의 핵심 차이</h2>
           <h3>[비대졸 전형] : 직관력, 속도, 기본기 중심</h3>
@@ -411,8 +408,13 @@ textarea#memo{flex:1;background:var(--surface);border:1px solid var(--border);bo
   <div id="privacy-view" class="independent-view">
     <h1>개인정보처리방침 (Privacy Policy)</h1>
     <div style="text-align:left; line-height: 1.8; color: var(--text);">
-      <p><b>1. 개인정보 수집 금지 및 프론트엔드 프로세스 선언</b><br>본 가상 CBT 모의마킹 연습 웹사이트는 이용자의 식별 가능한 개인 식별 정보를 수집하지 않는 순수 클라이언트 사이드 프로그램입니다.</p><br>
-      <p><b>2. 브라우저 로컬 스토리지 데이터 활용 목적</b><br>시험 도중 예기치 못한 시스템 오류, 새로고침 시 데이터 증발을 막기 위해 실시간 자동 백업 기능을 운용합니다.</p>
+      <p><b>1. 개인정보 수집 금지 및 프론트엔드 프로세스 선언</b><br>본 가상 CBT 모의마킹 연습 웹사이트는 이용자의 성명, 아이디, 고유 식별번호, 이메일 등 어떠한 개인 식별 정보도 수집, 저장, 가공하거나 원격 서버로 전송하지 않는 순수 클라이언트 사이드(Client-Side) 웹 애플리케이션입니다.</p><br>
+
+      <p><b>2. 브라우저 로컬 스토리지(LocalStorage) 데이터 활용 목적</b><br>시험 응시 중 예기치 못한 브라우저 종료, 새로고침, 창 이탈 시 데이터 유실을 방지하기 위해 <b>실시간 세션 백업(최대 2시간 유지) 및 자동 복구 시스템</b>을 운용합니다. 저장되는 데이터는 [사전 정답지 세트], [OMR 마킹 데이터], [임시 메모장 텍스트], [타이머 진행 상태] 등이며, 이용자 기기의 브라우저 내부 저장소에만 안전하게 일시 보관됩니다.</p><br>
+
+      <p><b>3. 데이터의 통제권 및 파기 방법</b><br>로컬 스토리지에 기록된 모든 응시 데이터의 통제권은 이용자 본인에게 귀속됩니다. 시험 완료 후 '최종 제출 종료'를 누르거나, 브라우저의 캐시/쿠키 초기화를 진행할 경우, 또는 세션 발생 후 2시간이 초과하면 해당 임시 데이터는 시스템에서 완전히 파기됩니다.</p><br>
+
+      <p><b>4. 제3자 광고 모듈(Google AdSense) 및 쿠키(Cookie) 운영</b><br>본 웹사이트는 원활한 무료 서비스 유지를 위해 구글 애드센스 광고(배너 및 전면 팝업)를 포함하고 있습니다. 구글을 포함한 제3자 제공업체는 이용자의 이전 웹사이트 방문 기록을 기반으로 맞춤형 광고를 노출하기 위해 쿠키(Cookie)를 활용할 수 있습니다. 이용자는 구글 광고 설정 페이지를 통해 맞춤설정 광고를 수동으로 차단하거나 제어할 수 있습니다.</p>
     </div>
     <button onclick="navigate('/');" class="start-btn" style="margin-top:40px; height:44px; font-size:14px;">◀ 메인 화면으로 돌아가기</button>
   </div>
@@ -420,7 +422,17 @@ textarea#memo{flex:1;background:var(--surface);border:1px solid var(--border);bo
   <div id="terms-view" class="independent-view">
     <h1>이용약관 (Terms of Service)</h1>
     <div style="text-align:left; line-height: 1.8; color: var(--text);">
-      <p><b>제1조 (목적)</b><br>본 약관은 타이머, OMR 마킹 카드 시스템 등 서비스 기능의 이용 조건 및 규정을 정의합니다.</p>
+      <p><b>제1조 (목적)</b><br>본 약관은 SKCT 모의마킹 웹 CBT 인터페이스(이하 "서비스")가 제공하는 PC 및 모바일 하이브리드 학습 편의 기능의 이용 조건과 권리, 의무를 규정하는 데 목적이 있습니다.</p><br>
+
+      <p><b>제2조 (저작권 보호 및 PDF 파일 소유 책임)</b><br>본 서비스는 웹 브라우저 내장 뷰어를 통해 이용자의 로컬 기기에 저장된 PDF 파일을 화면에 띄워줄 뿐(Local Rendering), 어떠한 형태의 시험지 원본 파일도 자체 서버에 업로드, 수집, 배포하지 않습니다. 저작권이 있는 문제집의 불법 공유 및 복제본 스캔 파일 사용으로 인해 발생하는 모든 법적 책임은 전적으로 파일을 연동한 이용자 본인에게 귀속됩니다.</p><br>
+
+      <p><b>제3조 (시스템 안정성 및 면책 조항)</b><br>① 서비스는 내결함성(Fault-Tolerance)을 위해 실시간 데이터 백업과 페이지 이탈 방지 경고창 시스템을 제공합니다.<br>
+      ② 단, 이용자의 기기 오작동, 시크릿 브라우징(InPrivate) 진입, 브라우저 강제 종료, 시스템 메모리 한계 등 통제할 수 없는 요인으로 인해 발생하는 데이터 유실(OMR 마킹 날아감, 메모 지워짐 등)에 대해서는 기술적, 법적 책임을 지지 않습니다.<br>
+      ③ 내장된 수리 계산기의 연산 결과는 보조용이며, 극단적인 소수점 오차나 예외 처리 결과에 대해 공식적인 수리적 검증 자료로써 보증하지 않습니다.</p><br>
+
+      <p><b>제4조 (서비스 운영 및 광고 송출 원칙)</b><br>개인 운영 서비스의 서버 및 트래픽 유지보수를 위해 메인 화면과 결과 리포트 화면, 그리고 시험장 입장 전환 시 제3자 디스플레이 광고(구글 애드센스)가 노출될 수 있습니다. 단, 학습자의 집중력 보존을 위해 '시험 타이머가 동작 중인 CBT 실제 응시 화면' 내부에는 어떠한 형태의 광고도 송출하지 않는 것을 원칙으로 합니다.</p><br>
+
+      <p><b>제5조 (서비스의 비공식성)</b><br>본 웹 어플리케이션은 개인이 비공식적으로 개발한 학습용 모의 인터페이스 툴킷이며, SK그룹 및 관련 채용 주관사의 공식 입장, 가이드라인, 실제 시험 환경 시스템을 대변하지 않습니다.</p>
     </div>
     <button onclick="navigate('/');" class="start-btn" style="margin-top:40px; height:44px; font-size:14px;">◀ 메인 화면으로 돌아가기</button>
   </div>
@@ -540,7 +552,6 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 window.addEventListener('hashchange', handleRoute);
 
-/* 실시간 세션 백업 엔진 */
 function backupActiveExamSession() {
   if (!isExamActive) return;
   const sessionData = {
@@ -703,7 +714,6 @@ function toggleOmrPanel() {
   else { panel.classList.remove('open'); btn.innerText = "◀"; pdfSec.style.marginRight = "0px"; isOmrOpened = false; }
 }
 
-/* 🚨 모바일 전용 뷰 탭 스위칭 엔진 */
 function switchMobileView(targetView) {
   document.body.setAttribute('data-mview', targetView);
   document.querySelectorAll('.m-nav-btn').forEach(btn => btn.classList.remove('active'));
@@ -712,7 +722,11 @@ function switchMobileView(targetView) {
   if (targetView === 'omr') document.getElementById('m-btn-omr').classList.add('active');
   if (targetView === 'tool') {
     document.getElementById('m-btn-tool').classList.add('active');
-    setTimeout(() => { if (typeof initCanvas === 'function') initCanvas(); }, 50); // 모바일 그림판 지연 렌더링 누락 방지
+    setTimeout(() => { 
+      if (typeof initCanvas === 'function' && document.getElementById('tab-paint').classList.contains('on')) {
+        initCanvas(); 
+      }
+    }, 50);
   }
 }
 
@@ -735,7 +749,7 @@ function enterExamRoom() {
   panel.classList.remove('open'); btn.innerText = "◀"; pdfSec.style.marginRight = "0px"; isOmrOpened = false;
 
   buildOmrSystemLayout(); switchTool('memo'); buildCalc(); 
-  switchMobileView('pdf'); // 모바일 입장 시 최초 뷰는 시험지로 고정
+  switchMobileView('pdf'); 
   
   totalSeconds = currentConfig.defaultTime * 60;
   remainingSeconds = totalSeconds;
@@ -819,31 +833,67 @@ function finishExam() {
 function switchTool(t){
   const mw = document.getElementById('memo-wrap'); const pw = document.getElementById('paint-wrap');
   const tm = document.getElementById('tab-memo'); const tp = document.getElementById('tab-paint');
-  if(t === 'memo'){ mw.classList.remove('hide'); pw.classList.add('hide'); tm.classList.add('on'); tp.classList.remove('on'); } 
-  else { mw.classList.add('hide'); pw.classList.remove('hide'); tm.classList.remove('on'); tp.classList.add('on'); initCanvas(); }
+  if(t === 'memo'){ 
+    mw.classList.remove('hide'); pw.classList.add('hide'); tm.classList.add('on'); tp.classList.remove('on'); 
+  } else { 
+    mw.classList.add('hide'); pw.classList.remove('hide'); tm.classList.remove('on'); tp.classList.add('on'); 
+    setTimeout(() => { initCanvas(); }, 10);
+  }
 }
 
-/* 그림판 모듈 */
 let painting=false, lx=0, ly=0, cinited=false;
 let resizeTimeout = null;
 
 function initCanvas(){
-  const cv=document.getElementById('paintCanvas'); const ctx=cv.getContext('2d');
+  const cv = document.getElementById('paintCanvas');
+  const parent = cv.parentElement;
+  
+  if (!parent || parent.clientWidth === 0 || parent.clientHeight === 0) return; 
+
+  const ctx = cv.getContext('2d');
+  const targetW = parent.clientWidth;
+  const targetH = Math.max(parent.clientHeight - 30, 100); 
+
   if(!cinited){
-    cv.width=cv.parentElement.clientWidth; cv.height=cv.parentElement.clientHeight - 30; ctx.fillStyle='#ffffff'; ctx.fillRect(0,0,cv.width,cv.height); cinited=true; 
-    function gp(e){ const r=cv.getBoundingClientRect(); const cx = e.touches ? e.touches[0].clientX : e.clientX; const cy = e.touches ? e.touches[0].clientY : e.clientY; return{ x: (cx - r.left) * (cv.width / r.width), y: (cy - r.top) * (cv.height / r.height) }; }
-    function draw(e){ if(!painting)return; const p=gp(e); ctx.beginPath(); ctx.strokeStyle='#1a1d27'; ctx.lineWidth=3; ctx.lineCap='round'; ctx.moveTo(lx,ly); ctx.lineTo(p.x,p.y); ctx.stroke(); lx=p.x; ly=p.y; }
-    cv.addEventListener('mousedown',e=>{ painting=true; const p=gp(e); lx=p.x; ly=p.y; }); cv.addEventListener('mousemove',draw); window.addEventListener('mouseup',()=>painting=false);
-    cv.addEventListener('touchstart',e=>{ e.preventDefault(); painting=true; const p=gp(e); lx=p.x; ly=p.y; },{passive:false}); cv.addEventListener('touchmove',e=>{ e.preventDefault(); draw(e); },{passive:false}); cv.addEventListener('touchend',()=>painting=false);
-  } else { resizeCanvasElement(cv, ctx); }
+    cv.width = targetW; cv.height = targetH;
+    ctx.fillStyle = '#ffffff'; ctx.fillRect(0,0,cv.width,cv.height);
+    cinited = true; 
+
+    function gp(e){ 
+      const r = cv.getBoundingClientRect(); 
+      const cx = (e.touches && e.touches.length > 0) ? e.touches[0].clientX : e.clientX; 
+      const cy = (e.touches && e.touches.length > 0) ? e.touches[0].clientY : e.clientY; 
+      return { x: (cx - r.left) * (cv.width / r.width), y: (cy - r.top) * (cv.height / r.height) }; 
+    }
+    
+    function draw(e){ 
+      if(!painting) return; 
+      const p = gp(e); 
+      ctx.beginPath(); ctx.strokeStyle = '#1a1d27'; ctx.lineWidth = 3; ctx.lineCap = 'round'; ctx.lineJoin = 'round';
+      ctx.moveTo(lx, ly); ctx.lineTo(p.x, p.y); ctx.stroke(); 
+      lx = p.x; ly = p.y; 
+    }
+    
+    cv.addEventListener('mousedown', e => { painting=true; const p=gp(e); lx=p.x; ly=p.y; }); 
+    cv.addEventListener('mousemove', draw); 
+    window.addEventListener('mouseup', () => painting=false);
+
+    cv.addEventListener('touchstart', e => { e.preventDefault(); painting=true; const p=gp(e); lx=p.x; ly=p.y; }, {passive:false}); 
+    cv.addEventListener('touchmove', e => { e.preventDefault(); draw(e); }, {passive:false}); 
+    cv.addEventListener('touchend', () => painting=false);
+    cv.addEventListener('touchcancel', () => painting=false);
+  } else { 
+    resizeCanvasElement(cv, ctx, targetW, targetH); 
+  }
 }
 
-function resizeCanvasElement(canvas, context) {
-  const parent = canvas.parentElement; if (!parent || parent.clientWidth === 0) return;
-  const targetW = parent.clientWidth; const targetH = parent.clientHeight - 30;
+function resizeCanvasElement(canvas, context, targetW, targetH) {
   if (canvas.width !== targetW || canvas.height !== targetH) {
-    const tempCanvas = document.createElement('canvas'); tempCanvas.width = canvas.width; tempCanvas.height = canvas.height; 
+    const tempCanvas = document.createElement('canvas'); 
+    tempCanvas.width = Math.max(canvas.width, 1); 
+    tempCanvas.height = Math.max(canvas.height, 1); 
     tempCanvas.getContext('2d').drawImage(canvas, 0, 0);
+    
     canvas.width = targetW; canvas.height = targetH;
     context.fillStyle = '#ffffff'; context.fillRect(0, 0, targetW, targetH); 
     context.drawImage(tempCanvas, 0, 0, tempCanvas.width, tempCanvas.height, 0, 0, targetW, targetH);
@@ -853,16 +903,18 @@ function resizeCanvasElement(canvas, context) {
 window.addEventListener('resize', () => {
   if (cinited && !document.getElementById('paint-wrap').classList.contains('hide')) {
     clearTimeout(resizeTimeout);
-    resizeTimeout = setTimeout(() => {
-      const cv = document.getElementById('paintCanvas');
-      if (cv) resizeCanvasElement(cv, cv.getContext('2d'));
-    }, 150);
+    resizeTimeout = setTimeout(() => { initCanvas(); }, 150);
   }
 });
 
-function clearCanvas(){ if(cinited){ const cv=document.getElementById('paintCanvas'); cv.getContext('2d').fillStyle='#ffffff'; cv.getContext('2d').fillRect(0,0,cv.width,cv.height); } }
+function clearCanvas(){ 
+  if(cinited){ 
+    const cv=document.getElementById('paintCanvas'); 
+    cv.getContext('2d').fillStyle='#ffffff'; 
+    cv.getContext('2d').fillRect(0,0,cv.width,cv.height); 
+  } 
+}
 
-/* 계산기 모듈 */
 const CBTNS=[{lbl:'C',row:1,col:1},{lbl:'←',row:1,col:2},{lbl:'÷',row:1,col:3},{lbl:'×',row:1,col:4},{lbl:'7',row:2,col:1},{lbl:'8',row:2,col:2},{lbl:'9',row:2,col:3},{lbl:'−',row:2,col:4},{lbl:'4',row:3,col:1},{lbl:'5',row:3,col:2},{lbl:'6',row:3,col:3},{lbl:'+',row:3,col:4},{lbl:'1',row:4,col:1},{lbl:'2',row:4,col:2},{lbl:'3',row:4,col:3},{lbl:'=',row:4,col:4,rSpan:2},{lbl:'0',row:5,col:1},{lbl:'00',row:5,col:2},{lbl:'.',row:5,col:3}];
 let ce2='', cv2='0', pv='', cop='', newN=true;
 
